@@ -6,9 +6,10 @@ variable "x1"{
     }
 
 output "x1"{
+    #direct varible usage
     value = var.x1
     }
 
-output "x1"{
-    value = $(var.x1)
+output "x2"{
+    value = "value of x1 $(var.x1)"
     }
