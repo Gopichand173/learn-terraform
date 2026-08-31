@@ -4,5 +4,5 @@ module "sample"{
 }
 
 variable "instance_type"{
-    default = "abc"
+    default = "t3.micro"
     }
