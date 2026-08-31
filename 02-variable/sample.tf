@@ -64,3 +64,12 @@ output "list"{
 output "map"{
         value = var.map["skill"]
         }
+
+#value will automatic pick from tfvars
+variable "x"{
+
+    }
+
+#dev.tfvars,prod.tfvars  -> this needs to be exculsively passed with -var-file from cli
+variable "env"{
+    }
