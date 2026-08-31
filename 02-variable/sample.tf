@@ -57,8 +57,10 @@ variable "map"{
     }
 
 output "list"{
-    value = var.list[1]}
+    value = var.list[1]
+    }
 
-    output "map"{
+
+output "map"{
         value = var.map[skill]
         }
