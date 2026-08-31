@@ -11,5 +11,5 @@ output "x1"{
     }
 
 output "x2"{
-    value = "value of x1 $(var.x1)"
+    value = "value of x1 is ${var.x1}"
     }
