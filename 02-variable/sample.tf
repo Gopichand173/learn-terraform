@@ -62,5 +62,5 @@ output "list"{
 
 
 output "map"{
-        value = var.map[skill]
+        value = var.map["skill"]
         }
