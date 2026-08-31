@@ -77,3 +77,10 @@ variable "env"{
 output "env"{
     value = var.env
     }
+#file name has to be different, but the fileneeds to be loaded automatically, then auto.tfvars
+varibale "x4"{
+    }
+
+output "env"{
+    value = var.x4
+    }
