@@ -4,16 +4,16 @@ resource "null_resource" "dummy"{
 
 provider "aws" {}
 
-variable "instance"{
+variable "instances"{
     default = [frontend,catalogue]
     }
 
 resource "aws_instance" "web" {
-    count = length(var.instance)
+    count = length(var.instances)
   ami           = "ami-0220d79f3f480ecf5"
   instance_type = "t3.micro"
 
   tags = {
-    Name = var.instance[count.index]
+    Name = var.instances[count.index]
   }
 }
