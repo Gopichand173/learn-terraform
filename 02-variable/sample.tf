@@ -73,3 +73,7 @@ variable "x"{
 #dev.tfvars,prod.tfvars  -> this needs to be exculsively passed with -var-file from cli
 variable "env"{
     }
+
+output "env"{
+    value = var.env
+    }
