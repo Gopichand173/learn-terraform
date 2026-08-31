@@ -5,7 +5,7 @@ resource "null_resource" "dummy"{
 provider "aws" {}
 
 variable "instances"{
-    default = [frontend,catalogue]
+    default = ["frontend","catalogue"]
     }
 
 resource "aws_instance" "web" {
