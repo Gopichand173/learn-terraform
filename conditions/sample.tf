@@ -6,3 +6,5 @@ resource "aws_instance" "web" {
     Name = "sample"
   }
 }
+
+variable "instance_type" {}
